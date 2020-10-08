@@ -1,0 +1,62 @@
+<?php	
+	// 배포 상태
+	$GLOBALS['ISDEVELOP'] = false;
+	// 컨텍스트 패스
+	$GLOBALS['CONTEXTPATH'] = ''; 
+	// 호스트 정보
+	$GLOBALS['SITE'] = array( 
+		'DOMAIN' => 'homely-store.co.kr',
+		'NAME' => 'DAEJEON FLOORBALL',
+		'DESCRIPTION' => 'DAEJEON FLOORBALL',
+		'KEYWORD' => 'DAEJEON FLOORBALL',
+		'LOCALE' => 'ko_KR',
+		'UPDATEDATE' => '20190512',
+		'CATEGORY' => 4,
+		'ISSEPARATE' => true 	// 분리형 홈페이지인 경우 true
+	);
+	// DB 정보
+	$GLOBALS['DB'] = array(	
+		'HOST' => '',
+		'ID' => '',
+		'PW' => '!!',
+		'NAME' => ''
+	);
+	// 접두사 정보
+	$GLOBALS['PREFIX'] = array(	
+		'FILE' => '/upload',
+		'ADMIN' => '/admin',
+		'LOG' => '/log',
+		'MOBILE' => '/m',
+	);
+	// PATH 정보
+	$GLOBALS['PATH'] = array(	
+		'RESOURCES' => "{$CONTEXTPATH}/resources",
+		'HTTP_ROOT' => "{$CONTEXTPATH}",
+		'HTTP_ROOT_IMPORT' => "{$CONTEXTPATH}",
+		'ROOT' => "{$_SERVER['DOCUMENT_ROOT']}{$CONTEXTPATH}",
+		'ADMIN' => "{$_SERVER['DOCUMENT_ROOT']}{$CONTEXTPATH}{$PREFIX['ADMIN']}",
+		'ROOT_IMPORT' => "{$_SERVER['DOCUMENT_ROOT']}{$CONTEXTPATH}",
+	);
+	// 페이지 정보
+	$GLOBALS['PAGE'] = array(
+		'MOBILE' => array(
+			'MIN_WIDTH' => '360px',
+			'MAX_WIDTH' => '1365px',
+		),
+		'PC' => array(
+			'MIN_WIDTH' => '1366px',
+			'CANVAS_WIDTH' => '1024px',
+		)
+	);
+	// 테마 정보
+	$GLOBALS['THEME'] = array(
+		'MAIN_FONT' => '#243077',
+		'SITE_TONE' => '#f2f2f2',
+		'TEXT_TONE' => '#333',
+		'BORDER_TONE_LIGHT' => '#dddddd',
+		'BORDER_TONE_BOLD' => '#dcdcdc',
+		'SPINNER_COLOR' => '#a2a5a8',
+		'BACKGROUND_COLOR' => '#f7f7f7'
+	);
+
+	require_once "{$PATH['ROOT']}/init.php";

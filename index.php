@@ -1,0 +1,8 @@
+
+
+<?
+
+
+        Header("Location:main.php"); 
+
+?>
